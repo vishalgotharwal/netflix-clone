@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+}
+
+.main{
+    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/c0b69670-89a3-48ca-877f-45ba7a60c16f/2642e08e-4202-490e-8e93-aff04881ee8a/IN-en-20240212-popsignuptwoweeks-perspective_alpha_website_small.jpg);
+    background-position: center;
+    height: 70vh;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size:max(1200px,100vw);
+}
+.main .box{
+height: 70vh;
+width: 100%;
+opacity: 0.69;
+position: absolute;
+top: 0;
+background-color: black;
+}
+nav{
+    max-width: 60vw;
+    margin: auto;
+    display: flex;
+justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+nav img{
+    color: red;
+    width: 130px;
+    /* new thing */
+    position: relative;
+    z-index: 10;
+}
+nav button{
+    position: relative;
+    z-index: 10;
+}
+.hero{
+    height: calc(100% - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    font-family: sans-serif;
+    gap: 23px;
+    padding: 0 30px;
+}
+.hero >:first-child{
+    font-weight: 900;
+    font-size: 48px;
+    text-align: center;
+}
+.hero >:nth-child(2){
+      font-weight: 400;
+      font-size: 24px;
+      text-align: center;
+}
+.hero :nth-child(3){
+    font-weight: 400;
+      font-size: 20px;
+      text-align: center;
+}
+.seperation{
+    height: 7px;
+    background-color:rgb(46, 44, 44);
+    position: relative;
+    z-index :20
+}
+.btn{
+    padding: 8px 20px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.825);
+    background-color: rgba(248, 243, 243, 0.082);
+    border: 1px solid white ;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.red-btn{
+background-color: rgb(193, 17, 25);;
+padding: 3px 24px;
+color: white;
+font-size: 20px;
+border-radius: 4px;
+font-weight: 400;
+}
+.hero-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.main input{
+    padding: 7px 101px 8px 14px;
+    font-weight: 900;
+    font-size: 12px;
+    color: white;
+    border-radius: 4px;
+    background-color: rgba(23 ,23,23,0.7);
+    border: 1px solid rgba(246,238,238,0.5);
+}
+.btn-red-sm{
+background-color: red;
+color: white;
+}
+.first{
+  display: flex;
+  justify-content: center;
+  max-width: 70vw;
+    margin: auto;
+ color: rgb(218, 212, 212);
+ justify-content: center;
+ align-items: center;
+}
+@media screen and (max-width:1300px) {
+  
+    .first{
+        flex-wrap:wrap;
+    }
+}
+.secimg{
+    position: relative;
+}
+.secimg img{  
+width: 555px;
+position: relative;
+z-index: 10;
+}
+.secimg video{
+    position: absolute;
+    top: 51px;
+    right: 0;
+    width: 555px;
+}
+@media screen and (max-width:1300px) {
+    nav{
+        max-width: 90vw;
+    }
+    .secimg img{  
+        width: 305px;
+        position: relative;
+        z-index: 10;
+        }
+        .secimg video{
+            position: absolute;
+            top: 51px;
+            right: 0;
+            width: 305px;
+        }
+        .hero >:nth-child(1){
+    
+            font-size: 32px;
+           
+      }
+      .hero >:nth-child(2){
+
+        font-size: 18px;
+  
+  }
+  .hero >:nth-child(3){
+
+    font-size: 18px;
+
+}
+.hero-buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.freq h2{
+    text-align: center;
+    font-size: 32px;
+}
+footer{
+    max-width: 90vw;
+}
+    .footer-item{
+        align-items: center;
+    }
+}
+section.first> div{
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+}
+.first >div :first-child{
+font-size: 48px;
+font-weight: bolder;
+}
+.first >div :nth-child(2){
+    font-size: 24px;
+    }
+    .freq h2{
+        text-align: center;
+        font-size: 48px;
+    }
+    .freq{
+        background-color: black; 
+        color: white;
+        padding: 34px;
+        font-size: 24px;
+    }
+.faqbox{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(128, 128, 128, 0.303);
+    padding: 24px;
+    max-width: 60vw;
+    margin:  34px auto;
+    cursor: pointer;
+    transition: all 1s ease-out;
+  
+
+}
+
+.faqbox:hover{
+    
+    background-color: rgba(128, 128, 128, 0.576);
+}
+footer{
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 14px;
+}
+.footer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    color: rgba(255, 255, 255, 0.823);
+   
+}
+@media screen and (max-width:1300px) {
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        color: rgba(255, 255, 255, 0.823);
+        gap: 25px;
+       
+    }
+}
+.footer a{
+font-size: 14px;
+    color: white;
+}
+
+ footer .question{
+    padding: 34px 0;
+}
+
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+select{
+color: white;
+background-color:black;
+border: 1px;
+border-radius: 2px;
+
+}
+.bbtn{
+border:none;
+}
+.btn:hover{
+    color: rgba(249, 244, 244, 0.923);
+}
+.footer-item a:hover{
+    color: red;
+}
+
